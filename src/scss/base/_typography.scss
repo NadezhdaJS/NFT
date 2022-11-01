@@ -1,0 +1,34 @@
+body {
+  font-family: $font-main;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: $color-main-text;
+  line-height: 2.5rem;
+}
+
+.h1 {
+  font-size: 9.7rem;
+  line-height: 8.7rem;
+  text-align: center;
+}
+
+.menu-text {
+  font-family: $font-second;
+}
+
+.paragraphs {
+  color: $color-paragraphs;
+  font-family: $font-second;
+  font-weight: 400;
+}
+
+.h2 {
+  font-size: 6.5rem;
+  line-height: 5.8rem;
+}
+
+.subtitle {
+  font-size: 2.4rem;
+  line-height: 2.2rem;
+}
