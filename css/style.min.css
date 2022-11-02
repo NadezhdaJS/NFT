@@ -27,6 +27,27 @@ html {
   align-items: center;
 }
 
+.circle {
+  position: absolute;
+  top: -1.2rem;
+  left: -1.7rem;
+  width: 3.4rem;
+  height: 3.6rem;
+  z-index: -10;
+}
+
+.relative {
+  position: relative;
+}
+
+.margin-auto {
+  margin: 0 auto;
+}
+
+.absolute {
+  position: absolute;
+}
+
 body {
   font-family: Montserrat, sans-serif;
   font-style: normal;
@@ -40,10 +61,12 @@ body {
   font-size: 9.7rem;
   line-height: 8.7rem;
   text-align: center;
+  padding-bottom: 4.5rem;
 }
 
 .menu-text {
   font-family: "Open Sans", sans-serif;
+  width: fit-content;
 }
 
 .paragraphs {
@@ -488,4 +511,42 @@ select {
   background-color: #f7859c;
   border-radius: 1.2rem;
   padding: 0.8rem 2.7rem;
+}
+
+.main {
+  text-align: center;
+  padding-top: 9rem;
+  padding-bottom: 39.5rem;
+}
+.main__text {
+  padding-bottom: 2.9rem;
+  max-width: 42.9rem;
+  margin: auto;
+}
+.main__circle-left {
+  left: 0;
+  top: 31%;
+  z-index: -10;
+}
+.main__hero-left {
+  left: 3%;
+  top: 18%;
+}
+.main__pattern-left {
+  left: 20%;
+  top: -2rem;
+}
+.main__circle-right {
+  right: 7%;
+  top: 6%;
+  z-index: -10;
+}
+.main__hero-right {
+  right: 5%;
+  top: 17%;
+}
+.main__pattern-right {
+  right: 23%;
+  top: 46%;
+  z-index: -9;
 }
