@@ -56,6 +56,17 @@ html {
   text-align: center;
 }
 
+.wave {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.wave--content {
+  top: 100%;
+  left: 0;
+}
+
 body {
   font-family: Montserrat, sans-serif;
   font-style: normal;
@@ -587,7 +598,7 @@ select {
 }
 
 .meet-section {
-  padding-bottom: 9rem;
+  padding-bottom: 22.7rem;
 }
 .meet-section__text {
   max-width: 37.4rem;
