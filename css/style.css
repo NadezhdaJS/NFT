@@ -480,3 +480,12 @@ select {
   text-decoration: none;
   color: #222222;
 }
+
+.btn {
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  background-color: #f7859c;
+  border-radius: 1.2rem;
+  padding: 0.8rem 2.7rem;
+}
