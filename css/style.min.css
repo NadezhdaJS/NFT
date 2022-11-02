@@ -47,6 +47,11 @@ html {
   left: 48%;
   transform: translate(-50%, 0);
 }
+.circle--footer {
+  left: 5%;
+  transform: translate(-50%, 0);
+  top: 2%;
+}
 
 .relative {
   position: relative;
@@ -78,6 +83,10 @@ html {
   bottom: 100%;
 }
 
+.wrapper {
+  padding: 0 1.5rem;
+}
+
 body {
   font-family: Montserrat, sans-serif;
   font-style: normal;
@@ -92,6 +101,7 @@ body {
   line-height: 8.7rem;
   text-align: center;
   padding-bottom: 4.5rem;
+  z-index: 100;
 }
 
 .menu-text {
@@ -544,6 +554,45 @@ select {
 .header__link {
   text-decoration: none;
   color: #222222;
+}
+
+.footer {
+  background-color: #d3d4ed;
+  padding: 10rem 0 10rem;
+}
+.footer__h2 {
+  padding-bottom: 2.8rem;
+}
+.footer__list-item {
+  display: inline-block;
+}
+.footer__list-item:not(:last-child) {
+  padding-right: 4.2rem;
+}
+.footer__link {
+  text-decoration: none;
+  color: #222222;
+  font-weight: 400;
+  line-height: 2.5rem;
+}
+.footer__right-column {
+  padding-top: 2.2rem;
+}
+.footer__nav-item:not(:first-child) {
+  padding-top: 1.2rem;
+}
+.footer__nav-item:first-child {
+  padding-bottom: 1.1rem;
+  padding-top: 3.3rem;
+}
+.footer__pattern {
+  top: -1%;
+  left: 7%;
+}
+.footer__line {
+  position: absolute;
+  top: 30%;
+  left: 0;
 }
 
 .btn {
