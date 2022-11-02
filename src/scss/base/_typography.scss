@@ -11,10 +11,12 @@ body {
   font-size: 9.7rem;
   line-height: 8.7rem;
   text-align: center;
+  padding-bottom: 4.5rem;
 }
 
 .menu-text {
   font-family: $font-second;
+  width: fit-content;
 }
 
 .paragraphs {

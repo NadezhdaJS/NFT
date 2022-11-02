@@ -1,0 +1,39 @@
+.main {
+  text-align: center;
+  padding-top: 9rem;
+  padding-bottom: 39.5rem;
+
+  &__text {
+    padding-bottom: 2.9rem;
+    max-width: 42.9rem;
+    margin: auto;
+  }
+
+  &__circle-left {
+    left: 0;
+    top: 31%;
+    z-index: -10;
+  }
+  &__hero-left {
+    left: 3%;
+    top: 18%;
+  }
+  &__pattern-left {
+    left: 20%;
+    top: -2rem;
+  }
+  &__circle-right {
+    right: 7%;
+    top: 6%;
+    z-index: -10;
+  }
+  &__hero-right {
+    right: 5%;
+    top: 17%;
+  }
+  &__pattern-right {
+    right: 23%;
+    top: 46%;
+    z-index: -9;
+  }
+}
