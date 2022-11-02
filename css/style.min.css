@@ -606,6 +606,7 @@ select {
 .content-section {
   background-color: #fbf1e6;
   padding-top: 14rem;
+  padding-bottom: 6.7rem;
 }
 .content-section__text {
   z-index: 100;
