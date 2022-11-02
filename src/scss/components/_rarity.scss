@@ -1,0 +1,27 @@
+.rarity {
+  &__line {
+    margin: 6.8rem 0;
+  }
+  &__content {
+  }
+
+  &__text {
+    max-width: 33.6rem;
+  }
+
+  &__tier-box {
+    padding: 3.25rem 0 2.25rem;
+  }
+  &__tier {
+    padding-right: 3.2rem;
+  }
+
+  &__rate-img {
+    width: 1.7rem;
+    height: 1.8rem;
+    display: inline;
+  }
+
+  &__image {
+  }
+}

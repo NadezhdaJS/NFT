@@ -32,7 +32,7 @@ html {
   left: -1.7rem;
   width: 3.4rem;
   height: 3.6rem;
-  z-index: -10;
+  z-index: 1;
 }
 
 .relative {
@@ -45,4 +45,8 @@ html {
 
 .absolute {
   position: absolute;
+}
+
+.tac {
+  text-align: center;
 }
