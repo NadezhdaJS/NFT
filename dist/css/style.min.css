@@ -554,3 +554,20 @@ select {
   top: 46%;
   z-index: -9;
 }
+
+.meet-section {
+  padding-bottom: 9rem;
+}
+.meet-section__text {
+  max-width: 37.4rem;
+  padding-top: 13.6rem;
+}
+.meet-section__paragraphs {
+  padding: 1.7rem 4.2rem 3.2rem 0;
+}
+.meet-section__image {
+  padding-top: 6.6rem;
+}
+.meet-section__line {
+  margin-bottom: 2.8rem;
+}

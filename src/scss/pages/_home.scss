@@ -37,3 +37,23 @@
     z-index: -9;
   }
 }
+
+.meet-section {
+  padding-bottom: 9rem;
+  &__text {
+    max-width: 37.4rem;
+    padding-top: 13.6rem;
+  }
+
+  &__paragraphs {
+    padding: 1.7rem 4.2rem 3.2rem 0;
+  }
+
+  &__image {
+    padding-top: 6.6rem;
+  }
+
+  &__line {
+    margin-bottom: 2.8rem;
+  }
+}
