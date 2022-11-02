@@ -71,4 +71,26 @@
 
 .roadmap {
   padding-top: 26rem;
+  padding-bottom: 11.3rem;
+}
+
+.team-section {
+  background-color: $color-pink;
+  padding-top: 13.9rem;
+  padding-bottom: 12rem;
+
+  &__text {
+  }
+  &__member {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  &__position {
+    padding: 2.48rem 0 0.6rem;
+  }
+
+  &__space {
+    padding: 4.8rem 0 6.8rem;
+  }
 }

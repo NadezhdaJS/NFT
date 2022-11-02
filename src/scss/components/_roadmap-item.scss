@@ -43,3 +43,27 @@
     right: -59%;
   }
 }
+
+.faq {
+  padding: 21rem 0 12rem;
+
+  &__questions {
+    padding-top: 6.8rem;
+    padding-bottom: 12rem;
+  }
+  &__box {
+    display: flex;
+    padding: 3rem 0 3.7rem;
+    justify-content: space-between;
+  }
+  &__question {
+  }
+  &__cross {
+    width: 1.7rem;
+    height: 1.7rem;
+    &:hover,
+    &:active {
+      cursor: pointer;
+    }
+  }
+}

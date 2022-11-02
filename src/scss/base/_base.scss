@@ -38,6 +38,15 @@ html {
     left: 45.5%;
     transform: translate(-50%, 0);
   }
+
+  &--team {
+    left: 47%;
+    transform: translate(-50%, 0);
+  }
+  &--faq {
+    left: 48%;
+    transform: translate(-50%, 0);
+  }
 }
 
 .relative {
@@ -65,5 +74,9 @@ html {
   &--content {
     top: 100%;
     left: 0;
+  }
+
+  &--team {
+    bottom: 100%;
   }
 }
