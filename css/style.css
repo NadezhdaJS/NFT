@@ -525,11 +525,11 @@ select {
 }
 .main__circle-left {
   left: 0;
-  top: 31%;
+  top: 29%;
   z-index: -10;
 }
 .main__hero-left {
-  left: 3%;
+  left: 4%;
   top: 18%;
 }
 .main__pattern-left {
