@@ -1,0 +1,49 @@
+.footer {
+  background-color: $color-lavender;
+  padding: 10rem 0 10rem;
+  &__left-column {
+  }
+
+  &__h2 {
+    padding-bottom: 2.8rem;
+  }
+
+  &__list {
+  }
+  &__list-item {
+    display: inline-block;
+    &:not(:last-child) {
+      padding-right: 4.2rem;
+    }
+  }
+  &__link {
+    text-decoration: none;
+    color: $color-main-text;
+    font-weight: 400;
+    line-height: 2.5rem;
+  }
+  &__right-column {
+    padding-top: 2.2rem;
+  }
+  &__nav {
+  }
+  &__nav-item {
+    &:not(:first-child) {
+      padding-top: 1.2rem;
+    }
+    &:first-child {
+      padding-bottom: 1.1rem;
+      padding-top: 3.3rem;
+    }
+  }
+  &__pattern {
+    top: -1%;
+    left: 7%;
+  }
+
+  &__line {
+    position: absolute;
+    top: 30%;
+    left: 0;
+  }
+}

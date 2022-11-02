@@ -47,6 +47,11 @@ html {
     left: 48%;
     transform: translate(-50%, 0);
   }
+  &--footer {
+    left: 5%;
+    transform: translate(-50%, 0);
+    top: 2%;
+  }
 }
 
 .relative {
@@ -79,4 +84,8 @@ html {
   &--team {
     bottom: 100%;
   }
+}
+
+.wrapper {
+  padding: 0 1.5rem;
 }
