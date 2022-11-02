@@ -1,0 +1,21 @@
+.roadmap-item {
+  width: 53rem;
+  height: 47.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 9.55rem auto 10.7rem;
+  &__text {
+    width: 36rem;
+  }
+
+  &__circle {
+    z-index: -10;
+    top: 0;
+    left: 0;
+  }
+
+  &__h3 {
+    padding: 0.9rem 0 2.3rem;
+  }
+}

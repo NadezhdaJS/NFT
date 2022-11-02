@@ -559,6 +559,26 @@ select {
   height: 1.8rem;
   display: inline;
 }
+.roadmap-item {
+  width: 53rem;
+  height: 47.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 9.55rem auto 10.7rem;
+}
+.roadmap-item__text {
+  width: 36rem;
+}
+.roadmap-item__circle {
+  z-index: -10;
+  top: 0;
+  left: 0;
+}
+.roadmap-item__h3 {
+  padding: 0.9rem 0 2.3rem;
+}
+
 .main {
   text-align: center;
   padding-top: 9rem;
@@ -622,4 +642,8 @@ select {
 .content-section__text {
   z-index: 100;
   position: relative;
+}
+
+.roadmap {
+  padding-top: 26rem;
 }
