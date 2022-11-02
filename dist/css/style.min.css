@@ -35,6 +35,10 @@ html {
   height: 3.6rem;
   z-index: 1;
 }
+.circle--center {
+  left: 45.5%;
+  transform: translate(-50%, 0);
+}
 
 .relative {
   position: relative;

@@ -33,6 +33,11 @@ html {
   width: 3.4rem;
   height: 3.6rem;
   z-index: 1;
+
+  &--center {
+    left: 45.5%;
+    transform: translate(-50%, 0);
+  }
 }
 
 .relative {
