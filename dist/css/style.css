@@ -578,6 +578,26 @@ select {
 .roadmap-item__h3 {
   padding: 0.9rem 0 2.3rem;
 }
+.roadmap-item__pattern {
+  top: -3%;
+  right: -28%;
+}
+.roadmap-item__first-girl {
+  top: 0;
+  right: -46%;
+}
+.roadmap-item__pattern-2 {
+  top: 50%;
+  right: -50%;
+}
+.roadmap-item__girl-2 {
+  top: 15%;
+  right: -50%;
+}
+.roadmap-item__couple {
+  top: 5%;
+  right: -59%;
+}
 
 .main {
   text-align: center;
