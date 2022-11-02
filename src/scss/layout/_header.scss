@@ -1,0 +1,19 @@
+.header {
+  padding: 3.2rem 6.5rem;
+
+  &__nav {
+  }
+  &__menu {
+  }
+  &__menu-item {
+    display: inline-block;
+    padding-right: 3rem;
+  }
+  &__link {
+    text-decoration: none;
+    color: $color-main-text;
+  }
+}
+
+.btn {
+}
