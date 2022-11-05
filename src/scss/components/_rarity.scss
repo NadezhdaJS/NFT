@@ -1,27 +1,83 @@
 .rarity {
   &__line {
-    margin: 6.8rem 0;
+    margin: 4.72vw 0;
   }
   &__content {
+    @media only screen and (max-width: $bp-medium) {
+      display: flex;
+      justify-content: space-around;
+    }
+    @media only screen and (max-width: $bp-tablet) {
+      display: flex;
+      justify-content: space-between;
+    }
+    @media only screen and (max-width: $bp-mobile) {
+      display: flex;
+      justify-content: space-between;
+    }
   }
 
   &__text {
-    max-width: 33.6rem;
+    max-width: 23.33vw;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    @media only screen and (max-width: $bp-tablet) {
+      max-width: 50%;
+      margin-left: 8%;
+    }
+    @media only screen and (max-width: $bp-mobile-small) {
+      max-width: 50%;
+      margin-left: 0;
+    }
   }
 
   &__tier-box {
-    padding: 3.25rem 0 2.25rem;
+    padding: 2.29vw 0 1.6vw;
   }
   &__tier {
-    padding-right: 3.2rem;
+    padding-right: 2.22vw;
   }
 
   &__rate-img {
-    width: 1.7rem;
-    height: 1.8rem;
+    width: 1.18vw;
+    height: 1.25vw;
     display: inline;
   }
 
+  &__img {
+    @media only screen and (max-width: $bp-mobile) {
+      //width: 100%;
+      position: absolute;
+      left: 10%;
+      width: 100%;
+    }
+  }
   &__image {
+    @media only screen and (max-width: $bp-mobile) {
+      //width: 100%;
+      //flex-wrap: wrap;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+    }
+    @media only screen and (max-width: $bp-tablet) {
+    }
+    @media only screen and (max-width: $bp-mobile) {
+      width: 100%;
+      position: absolute;
+      left: 65%;
+      top: 20%;
+      width: 50%;
+    }
+    @media only screen and (max-width: $bp-mobile-small) {
+      top: 20%;
+      width: 48%;
+    }
+    @media only screen and (max-width: $bp-mobile-small) {
+      top: 20%;
+      width: 58%;
+    }
   }
 }

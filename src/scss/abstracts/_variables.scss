@@ -11,13 +11,27 @@ $font-main: Montserrat, sans-serif;
 $font-second: "Open Sans", sans-serif;
 
 //Adaptive
-$bp-largest: 90em; // 1440px
-$bp-large: 83.75em; // 1340px
-$bp-big: 77.5em; // 1240px
+$bp-largest: 90em; //
+$bp-large: 83.75em; //
+$bp-big: 77.5em; //
 $bp-medium: 64em; // 1024px
-/* $bp-small: 37.5em; // 600px
-$bp-smallest: 31.25em; // 500px */
+$bp-tablet: 48em; // 768px
+$bp-mobile: 26.6em; // 425px
+$bp-mobile-small: 23.4em; // 375px
+$bp-smallest: 20; // 320px */
 
-/* @media only screen and (max-width: $bp-medium) {
-    font-size: 66.66%;
+/*  @media only screen and (max-width: $bp-medium) {
+    padding-bottom: 17rem;
+  }
+  @media only screen and (max-width: $bp-tablet) {
+    padding-bottom: 15rem;
+  }
+  @media only screen and (max-width: $bp-mobile) {
+    padding-bottom: 12rem;
+  }
+  @media only screen and (max-width: $bp-mobile-small) {
+    padding-bottom: 12rem;
+  }
+  @media only screen and (max-width: $bp-smallest) {
+    padding-bottom: 12rem;
   } */

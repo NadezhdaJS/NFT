@@ -1,17 +1,19 @@
 .main {
   text-align: center;
-  padding-top: 9rem;
-  padding-bottom: 39.5rem;
+  padding-top: 6.25vw;
+  padding-bottom: 27.43vw;
+  @media only screen and (max-width: $bp-medium) {
+    padding-bottom: 20.43vw;
+  }
+  @media only screen and (max-width: $bp-tablet) {
+    padding-bottom: 18.43vw;
+  }
 
   &__text {
     padding-bottom: 2.9rem;
-    max-width: 42.9rem;
+    max-width: 29.79vw;
     margin: auto;
   }
-
-  /*  &__img-box-1 {
-    width: 25vw;
-  } */
 
   &__circle-left {
     left: 0;
@@ -49,10 +51,28 @@
 }
 
 .meet-section {
-  padding-bottom: 22.7rem;
+  padding: 0 1.5rem 22.7rem;
+  @media only screen and (max-width: $bp-medium) {
+    padding-bottom: 17rem;
+  }
+  @media only screen and (max-width: $bp-tablet) {
+    padding-bottom: 12rem;
+  }
+
+  &__flex-sb {
+    display: flex;
+    justify-content: space-between;
+    @media only screen and (max-width: $bp-tablet) {
+      flex-direction: column-reverse;
+    }
+  }
+
   &__text {
     max-width: 37.4rem;
-    padding-top: 13.6rem;
+    padding-top: 9.44vw;
+    @media only screen and (max-width: $bp-tablet) {
+      margin: auto;
+    }
   }
 
   &__paragraphs {
@@ -61,6 +81,9 @@
 
   &__image {
     padding-top: 6.6rem;
+    @media only screen and (max-width: $bp-tablet) {
+      margin: auto;
+    }
   }
 
   &__line {
@@ -70,8 +93,7 @@
 
 .content-section {
   background-color: $color-brown;
-  padding-top: 14rem;
-  padding-bottom: 6.7rem;
+  padding: 9.72vw 1.5rem 4.65vw;
 
   &__text {
     z-index: 100;
