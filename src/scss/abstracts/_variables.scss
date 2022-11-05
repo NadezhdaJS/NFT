@@ -9,3 +9,15 @@ $color-hover-pink: #ff6685;
 
 $font-main: Montserrat, sans-serif;
 $font-second: "Open Sans", sans-serif;
+
+//Adaptive
+$bp-largest: 90em; // 1440px
+$bp-large: 83.75em; // 1340px
+$bp-big: 77.5em; // 1240px
+$bp-medium: 64em; // 1024px
+/* $bp-small: 37.5em; // 600px
+$bp-smallest: 31.25em; // 500px */
+
+/* @media only screen and (max-width: $bp-medium) {
+    font-size: 66.66%;
+  } */

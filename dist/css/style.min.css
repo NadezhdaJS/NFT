@@ -1,4 +1,9 @@
 @charset "UTF-8";
+/* $bp-small: 37.5em; // 600px
+$bp-smallest: 31.25em; // 500px */
+/* @media only screen and (max-width: $bp-medium) {
+    font-size: 66.66%;
+  } */
 html {
   box-sizing: border-box;
   font-size: 62.5%;
@@ -13,6 +18,11 @@ html {
 .container {
   max-width: 98rem;
   margin: 0 auto;
+}
+@media only screen and (max-width: 64em) {
+  .container {
+    overflow-x: hidden;
+  }
 }
 
 .flex {
@@ -34,6 +44,10 @@ html {
   width: 3.4rem;
   height: 3.6rem;
   z-index: 1;
+}
+.circle--main {
+  left: 43.5%;
+  transform: translate(-50%, 0);
 }
 .circle--center {
   left: 45.5%;
@@ -91,16 +105,16 @@ body {
   font-family: Montserrat, sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 1.8rem;
+  font-size: 1.25vw;
   color: #222222;
-  line-height: 2.5rem;
+  line-height: 140%;
 }
 
 .h1 {
-  font-size: 9.7rem;
-  line-height: 8.7rem;
+  font-size: 6.5vw;
+  line-height: 90%;
   text-align: center;
-  padding-bottom: 4.5rem;
+  padding-bottom: 3.13vw;
   z-index: 100;
 }
 
@@ -117,24 +131,24 @@ body {
 }
 
 .h2 {
-  font-size: 6.5rem;
-  line-height: 5.8rem;
+  font-size: 4.51vw;
+  line-height: 90%;
 }
 
 .subtitle {
-  font-size: 2.4rem;
-  line-height: 2.2rem;
+  font-size: 1.67vw;
+  line-height: 92%;
 }
 
 .h3 {
-  font-size: 3.6rem;
-  line-height: 3.2rem;
+  font-size: 2.5vw;
+  line-height: 89%;
 }
 
 .questions {
   font-weight: 400;
-  font-size: 2.4rem;
-  line-height: 2.2rem;
+  font-size: 1.67vw;
+  line-height: 92%;
 }
 
 @font-face {
@@ -689,6 +703,9 @@ select {
   text-align: center;
   padding-top: 9rem;
   padding-bottom: 39.5rem;
+  /*  &__img-box-1 {
+    width: 25vw;
+  } */
 }
 .main__text {
   padding-bottom: 2.9rem;
@@ -697,30 +714,36 @@ select {
 }
 .main__circle-left {
   left: 0;
-  top: 29%;
+  top: 15vw;
   z-index: -10;
+  width: 35vw;
 }
 .main__hero-left {
-  left: 4%;
-  top: 18%;
+  left: 4vw;
+  top: 10vw;
+  width: 24vw;
 }
 .main__pattern-left {
-  left: 20%;
-  top: -2rem;
+  left: 19vw;
+  top: -1.5vw;
+  width: 17vw;
 }
 .main__circle-right {
-  right: 7%;
-  top: 6%;
+  right: 4vw;
+  top: 5vw;
   z-index: -10;
+  width: 34vw;
 }
 .main__hero-right {
-  right: 5%;
-  top: 17%;
+  right: 5vw;
+  top: 11vw;
+  width: 24vw;
 }
 .main__pattern-right {
-  right: 23%;
-  top: 46%;
+  right: 23vw;
+  top: 24vw;
   z-index: -9;
+  width: 17vw;
 }
 
 .meet-section {
