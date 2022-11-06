@@ -131,7 +131,7 @@ body {
 }
 @media only screen and (max-width: 20) {
   body {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -173,6 +173,11 @@ body {
 .h3 {
   font-size: 3.6rem;
   line-height: 89%;
+}
+@media only screen and (max-width: 23.4em) {
+  .h3 {
+    font-size: 3rem;
+  }
 }
 
 .questions {
@@ -591,9 +596,19 @@ select {
 .header {
   padding: 3.2rem 6.5rem;
 }
+@media only screen and (max-width: 43em) {
+  .header {
+    display: none;
+  }
+}
 .header__menu-item {
   display: inline-block;
   padding-right: 3rem;
+}
+@media only screen and (max-width: 48em) {
+  .header__menu-item {
+    padding-right: 2rem;
+  }
 }
 .header__link {
   text-decoration: none;
@@ -632,6 +647,7 @@ select {
 .footer__pattern {
   top: -1%;
   left: 7%;
+  width: 17.3rem;
 }
 .footer__line {
   position: absolute;
@@ -715,7 +731,7 @@ select {
     width: 100%;
     position: absolute;
     left: 65%;
-    top: 20%;
+    top: 10%;
     width: 48%;
   }
 }
@@ -740,13 +756,51 @@ select {
   align-items: center;
   margin: 9.55rem auto 10.7rem;
 }
+@media only screen and (max-width: 48em) {
+  .roadmap-item {
+    margin: 7.55rem auto 8.7rem;
+    height: 40.7rem;
+  }
+}
+@media only screen and (max-width: 48em) and (max-width: 26.6em) {
+  .roadmap-item {
+    margin: 5.55rem auto 6.7rem;
+    height: 30.7rem;
+    width: 46rem;
+  }
+}
 .roadmap-item__text {
   width: 36rem;
+}
+@media only screen and (max-width: 26.6em) {
+  .roadmap-item__text {
+    width: 30rem;
+  }
 }
 .roadmap-item__circle {
   z-index: -10;
   top: 0;
   left: 0;
+}
+@media only screen and (max-width: 48em) {
+  .roadmap-item__circle {
+    width: 93%;
+  }
+}
+@media only screen and (max-width: 26.6em) {
+  .roadmap-item__circle {
+    width: 87%;
+  }
+}
+@media only screen and (max-width: 23.4em) {
+  .roadmap-item__circle {
+    width: 83%;
+  }
+}
+@media only screen and (max-width: 20) {
+  .roadmap-item__circle {
+    width: 20%;
+  }
 }
 .roadmap-item__h3 {
   padding: 0.9rem 0 2.3rem;
@@ -755,25 +809,76 @@ select {
   top: -3%;
   right: -28%;
 }
+@media only screen and (max-width: 48em) {
+  .roadmap-item__pattern {
+    top: -3%;
+    right: -25%;
+  }
+}
+@media only screen and (max-width: 26.6em) {
+  .roadmap-item__pattern {
+    display: none;
+  }
+}
 .roadmap-item__first-girl {
   top: 0;
   right: -46%;
+}
+@media only screen and (max-width: 48em) {
+  .roadmap-item__first-girl {
+    right: -20%;
+  }
+}
+@media only screen and (max-width: 26.6em) {
+  .roadmap-item__first-girl {
+    display: none;
+  }
 }
 .roadmap-item__pattern-2 {
   top: 50%;
   right: -50%;
 }
+@media only screen and (max-width: 48em) {
+  .roadmap-item__pattern-2 {
+    right: -30%;
+  }
+}
+@media only screen and (max-width: 26.6em) {
+  .roadmap-item__pattern-2 {
+    display: none;
+  }
+}
 .roadmap-item__girl-2 {
   top: 15%;
   right: -50%;
+}
+@media only screen and (max-width: 48em) {
+  .roadmap-item__girl-2 {
+    right: -30%;
+  }
+}
+@media only screen and (max-width: 26.6em) {
+  .roadmap-item__girl-2 {
+    display: none;
+  }
 }
 .roadmap-item__couple {
   top: 5%;
   right: -59%;
 }
+@media only screen and (max-width: 48em) {
+  .roadmap-item__couple {
+    right: -40%;
+  }
+}
+@media only screen and (max-width: 26.6em) {
+  .roadmap-item__couple {
+    display: none;
+  }
+}
 
 .faq {
-  padding: 14.58vw 0 8.33vw;
+  padding: 14.58vw 1.5rem 8.33vw;
 }
 .faq__questions {
   padding-top: 4.72vw;
@@ -807,10 +912,20 @@ select {
     padding-bottom: 18.43vw;
   }
 }
+@media only screen and (max-width: 48em) and (max-width: 26.6em) {
+  .main {
+    padding-top: 65%;
+  }
+}
 .main__text {
   padding-bottom: 2.9rem;
   max-width: 29.79vw;
   margin: auto;
+}
+@media only screen and (max-width: 26.6em) {
+  .main__text {
+    max-width: 69.79vw;
+  }
 }
 .main__circle-left {
   left: 0;
@@ -818,10 +933,20 @@ select {
   z-index: -10;
   width: 35vw;
 }
+@media only screen and (max-width: 26.6em) {
+  .main__circle-left {
+    width: 46vw;
+  }
+}
 .main__hero-left {
   left: 4vw;
   top: 10vw;
   width: 24vw;
+}
+@media only screen and (max-width: 26.6em) {
+  .main__hero-left {
+    width: 30vw;
+  }
 }
 .main__pattern-left {
   left: 19vw;
@@ -834,16 +959,34 @@ select {
   z-index: -10;
   width: 34vw;
 }
+@media only screen and (max-width: 26.6em) {
+  .main__circle-right {
+    width: 48vw;
+    right: 0;
+  }
+}
 .main__hero-right {
   right: 5vw;
   top: 11vw;
   width: 24vw;
+}
+@media only screen and (max-width: 26.6em) {
+  .main__hero-right {
+    width: 30vw;
+    right: 3vw;
+  }
 }
 .main__pattern-right {
   right: 23vw;
   top: 24vw;
   z-index: -9;
   width: 17vw;
+}
+@media only screen and (max-width: 26.6em) {
+  .main__pattern-right {
+    top: 35vw;
+    right: 30vw;
+  }
 }
 
 .meet-section {
