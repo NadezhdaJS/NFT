@@ -5,14 +5,38 @@
   justify-content: center;
   align-items: center;
   margin: 9.55rem auto 10.7rem;
+  @media only screen and (max-width: $bp-tablet) {
+    margin: 7.55rem auto 8.7rem;
+    height: 40.7rem;
+    @media only screen and (max-width: $bp-mobile) {
+      margin: 5.55rem auto 6.7rem;
+      height: 30.7rem;
+      width: 46rem;
+    }
+  }
   &__text {
     width: 36rem;
+    @media only screen and (max-width: $bp-mobile) {
+      width: 30rem;
+    }
   }
 
   &__circle {
     z-index: -10;
     top: 0;
     left: 0;
+    @media only screen and (max-width: $bp-tablet) {
+      width: 93%;
+    }
+    @media only screen and (max-width: $bp-mobile) {
+      width: 87%;
+    }
+    @media only screen and (max-width: $bp-mobile-small) {
+      width: 83%;
+    }
+    @media only screen and (max-width: $bp-smallest) {
+      width: 20%;
+    }
   }
 
   &__h3 {
@@ -21,31 +45,62 @@
   &__pattern {
     top: -3%;
     right: -28%;
+    @media only screen and (max-width: $bp-tablet) {
+      top: -3%;
+      right: -25%;
+    }
+    @media only screen and (max-width: $bp-mobile) {
+      display: none;
+    }
   }
 
   &__first-girl {
     top: 0;
     right: -46%;
+    @media only screen and (max-width: $bp-tablet) {
+      right: -20%;
+    }
+    @media only screen and (max-width: $bp-mobile) {
+      display: none;
+    }
   }
 
   &__pattern-2 {
     top: 50%;
     right: -50%;
+    @media only screen and (max-width: $bp-tablet) {
+      right: -30%;
+    }
+    @media only screen and (max-width: $bp-mobile) {
+      display: none;
+    }
   }
 
   &__girl-2 {
     top: 15%;
     right: -50%;
+    @media only screen and (max-width: $bp-tablet) {
+      right: -30%;
+    }
+    @media only screen and (max-width: $bp-mobile) {
+      display: none;
+    }
   }
 
   &__couple {
     top: 5%;
     right: -59%;
+    @media only screen and (max-width: $bp-tablet) {
+      right: -40%;
+    }
+    @media only screen and (max-width: $bp-mobile) {
+      display: none;
+    }
   }
 }
 
 .faq {
-  padding: 14.58vw 0 8.33vw;
+  padding: 14.58vw 1.5rem 8.33vw;
 
   &__questions {
     padding-top: 4.72vw;

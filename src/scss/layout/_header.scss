@@ -1,5 +1,8 @@
 .header {
   padding: 3.2rem 6.5rem;
+  @media only screen and (max-width: $bp-menu) {
+    display: none;
+  }
 
   &__nav {
   }
@@ -8,6 +11,9 @@
   &__menu-item {
     display: inline-block;
     padding-right: 3rem;
+    @media only screen and (max-width: $bp-tablet) {
+      padding-right: 2rem;
+    }
   }
   &__link {
     text-decoration: none;

@@ -48,7 +48,6 @@
 
   &__img {
     @media only screen and (max-width: $bp-mobile) {
-      //width: 100%;
       position: absolute;
       left: 10%;
       width: 100%;
@@ -56,8 +55,6 @@
   }
   &__image {
     @media only screen and (max-width: $bp-mobile) {
-      //width: 100%;
-      //flex-wrap: wrap;
     }
 
     @media only screen and (max-width: $bp-medium) {
@@ -68,7 +65,7 @@
       width: 100%;
       position: absolute;
       left: 65%;
-      top: 20%;
+      top: 10%;
       width: 48%;
     }
     @media only screen and (max-width: $bp-mobile-small) {

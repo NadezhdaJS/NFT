@@ -7,12 +7,18 @@
   }
   @media only screen and (max-width: $bp-tablet) {
     padding-bottom: 18.43vw;
+    @media only screen and (max-width: $bp-mobile) {
+      padding-top: 65%;
+    }
   }
 
   &__text {
     padding-bottom: 2.9rem;
     max-width: 29.79vw;
     margin: auto;
+    @media only screen and (max-width: $bp-mobile) {
+      max-width: 69.79vw;
+    }
   }
 
   &__circle-left {
@@ -20,11 +26,17 @@
     top: 15vw;
     z-index: -10;
     width: 35vw;
+    @media only screen and (max-width: $bp-mobile) {
+      width: 46vw;
+    }
   }
   &__hero-left {
     left: 4vw;
     top: 10vw;
     width: 24vw;
+    @media only screen and (max-width: $bp-mobile) {
+      width: 30vw;
+    }
   }
   &__pattern-left {
     left: 19vw;
@@ -36,17 +48,29 @@
     top: 5vw;
     z-index: -10;
     width: 34vw;
+    @media only screen and (max-width: $bp-mobile) {
+      width: 48vw;
+      right: 0;
+    }
   }
   &__hero-right {
     right: 5vw;
     top: 11vw;
     width: 24vw;
+    @media only screen and (max-width: $bp-mobile) {
+      width: 30vw;
+      right: 3vw;
+    }
   }
   &__pattern-right {
     right: 23vw;
     top: 24vw;
     z-index: -9;
     width: 17vw;
+    @media only screen and (max-width: $bp-mobile) {
+      top: 35vw;
+      right: 30vw;
+    }
   }
 }
 
