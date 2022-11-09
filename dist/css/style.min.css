@@ -19,6 +19,10 @@ html {
   font-size: 62.5%;
 }
 
+.wrap {
+  overflow-x: hidden;
+}
+
 .line {
   width: 100%;
   height: 1px;
@@ -28,11 +32,6 @@ html {
 .container {
   max-width: 98rem;
   margin: 0 auto;
-}
-@media only screen and (max-width: 64em) {
-  .container {
-    overflow-x: hidden;
-  }
 }
 
 .flex {
@@ -698,13 +697,13 @@ select {
 }
 @media only screen and (max-width: 48em) {
   .rarity__text {
-    max-width: 50%;
+    max-width: 70%;
     margin-left: 8%;
   }
 }
 @media only screen and (max-width: 23.4em) {
   .rarity__text {
-    max-width: 50%;
+    max-width: 70%;
     margin-left: 0;
   }
 }
@@ -721,33 +720,16 @@ select {
 }
 @media only screen and (max-width: 26.6em) {
   .rarity__img {
-    position: absolute;
-    left: 10%;
-    width: 100%;
+    width: auto;
+    height: 200px;
+    max-width: none;
   }
 }
 @media only screen and (max-width: 26.6em) {
   .rarity__image {
-    width: 100%;
-    position: absolute;
-    left: 65%;
-    top: 10%;
-    width: 48%;
+    margin-right: -80px;
   }
 }
-@media only screen and (max-width: 23.4em) {
-  .rarity__image {
-    top: 20%;
-    width: 48%;
-  }
-}
-@media only screen and (max-width: 23.4em) {
-  .rarity__image {
-    top: 20%;
-    width: 58%;
-  }
-}
-
 .roadmap-item {
   width: 53rem;
   height: 47.7rem;
@@ -1000,6 +982,11 @@ select {
 @media only screen and (max-width: 48em) {
   .meet-section {
     padding-bottom: 12rem;
+  }
+}
+@media only screen and (max-width: 26.6em) {
+  .meet-section {
+    padding-bottom: 6rem;
   }
 }
 .meet-section__flex-sb {
