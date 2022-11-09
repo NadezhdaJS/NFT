@@ -82,6 +82,9 @@
   @media only screen and (max-width: $bp-tablet) {
     padding-bottom: 12rem;
   }
+  @media only screen and (max-width: $bp-mobile) {
+    padding-bottom: 6rem;
+  }
 
   &__flex-sb {
     display: flex;
