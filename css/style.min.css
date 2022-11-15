@@ -46,6 +46,10 @@ html {
   align-items: center;
 }
 
+.wrap {
+  flex-wrap: wrap;
+}
+
 .circle {
   position: absolute;
   top: -1.2rem;
@@ -1045,6 +1049,7 @@ select {
   display: flex;
   flex-direction: column;
   text-align: center;
+  padding-top: 5rem;
 }
 .team-section__position {
   padding: 2.48rem 0 0.6rem;
