@@ -104,21 +104,60 @@
 
   &__questions {
     padding-top: 4.72vw;
-    padding-bottom: 8.33vw;
   }
   &__box {
     display: flex;
     padding: 3rem 0 3.7rem;
     justify-content: space-between;
+    flex-direction: column;
   }
   &__question {
   }
-  &__cross {
-    width: 1.7rem;
-    height: 1.7rem;
+
+  &__body {
+    font-size: 2rem;
+    padding: 2.5rem 0;
+    display: none;
+    &--open {
+      display: flex;
+      //faq__body--open
+    }
+  }
+
+  &__header {
+    display: flex;
     &:hover,
     &:active {
       cursor: pointer;
     }
+  }
+  &__plus-box {
+    position: relative;
+    margin-left: auto;
+    width: 13px;
+    height: 13px;
+    align-items: center;
+    display: flex;
+  }
+  &__plus-vertical-line {
+    position: absolute;
+    width: 3px;
+    height: 13px;
+    background-color: $color-main-text;
+    left: 90%;
+    top: 50%;
+    &--open {
+      transform: rotate(270deg);
+      transition: all 0.3s;
+      //faq__plus-vertical-line--open
+    }
+  }
+  &__plus-horizontal-line {
+    position: absolute;
+    width: 13px;
+    height: 3px;
+    background-color: $color-main-text;
+    top: 90%;
+    left: 50%;
   }
 }
