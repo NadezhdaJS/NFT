@@ -37,6 +37,7 @@
     @media only screen and (max-width: $bp-mobile) {
       width: 30vw;
     }
+    animation: move-from-left 0.8s linear;
   }
   &__pattern-left {
     left: 19vw;
@@ -61,6 +62,7 @@
       width: 30vw;
       right: 3vw;
     }
+    animation: move-from-right 0.8s linear;
   }
   &__pattern-right {
     right: 23vw;
@@ -71,6 +73,30 @@
       top: 35vw;
       right: 30vw;
     }
+  }
+}
+
+@keyframes move-from-left {
+  from {
+    left: -20px;
+  }
+}
+
+@keyframes move-from-top {
+  to {
+    transform: scale(1.05);
+  }
+}
+
+@keyframes move-from-left-huge {
+  from {
+    right: -400px;
+  }
+}
+
+@keyframes move-from-right {
+  from {
+    right: -20px;
   }
 }
 
@@ -151,7 +177,82 @@
     padding: 2.48rem 0 0.6rem;
   }
 
-  &__space {
+  &__wrapper {
     padding: 3.33vw 0 4.72vw;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @media only screen and (max-width: $bp-team) {
+      justify-content: space-around;
+    }
+  }
+}
+
+.faq {
+  padding: 14.58vw 1.5rem 8.33vw;
+
+  &__questions {
+    padding-top: 4.72vw;
+  }
+  &__box {
+    display: flex;
+    padding: 3rem 0 3.7rem;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  &__question {
+    @media only screen and (max-width: $bp-mobile) {
+      font-size: 2rem;
+    }
+  }
+
+  &__body {
+    font-size: 2rem;
+    padding: 2.5rem 0;
+    display: none;
+    &--open {
+      display: flex;
+      //faq__body--open
+    }
+    @media only screen and (max-width: $bp-mobile) {
+      font-size: 1.8rem;
+    }
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+
+    &:hover,
+    &:active {
+      cursor: pointer;
+    }
+  }
+  &__plus-box {
+    position: relative;
+    margin-left: auto;
+    width: 13px;
+    height: 13px;
+  }
+  &__plus-vertical-line {
+    position: absolute;
+    width: 3px;
+    height: 13px;
+    background-color: $color-main-text;
+    left: 5.4px;
+    top: 0;
+    &--open {
+      transform: rotate(-90deg);
+      transition: all 0.3s;
+      //faq__plus-vertical-line--open
+    }
+  }
+  &__plus-horizontal-line {
+    position: absolute;
+    width: 13px;
+    height: 3px;
+    background-color: $color-main-text;
+    top: 5px;
+    left: 0;
   }
 }

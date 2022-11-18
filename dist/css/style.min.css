@@ -62,6 +62,12 @@ html {
   left: 43.5%;
   transform: translate(-50%, 0);
 }
+@media only screen and (max-width: 26.6em) {
+  .circle--main {
+    top: -1.8rem;
+    left: 41%;
+  }
+}
 .circle--center {
   left: 45.5%;
   transform: translate(-50%, 0);
@@ -112,6 +118,10 @@ html {
 
 .wrapper {
   padding: 0 1.5rem;
+}
+
+.animation {
+  animation: move-from-top 0.6s linear;
 }
 
 body {
@@ -625,6 +635,17 @@ select {
 .footer__h2 {
   padding-bottom: 2.8rem;
 }
+@media only screen and (max-width: 26.6em) {
+  .footer__h2 {
+    font-size: 3rem;
+  }
+}
+@media only screen and (max-width: 35em) {
+  .footer__list {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .footer__list-item {
   display: inline-block;
 }
@@ -652,10 +673,20 @@ select {
   left: 7%;
   width: 17.3rem;
 }
+@media only screen and (max-width: 64em) {
+  .footer__pattern {
+    display: none;
+  }
+}
 .footer__line {
   position: absolute;
   top: 30%;
   left: 0;
+}
+@media only screen and (max-width: 26.6em) {
+  .footer__line {
+    top: 25%;
+  }
 }
 
 .btn {
@@ -718,8 +749,8 @@ select {
   padding-right: 2.22vw;
 }
 .rarity__rate-img {
-  width: 1.18vw;
-  height: 1.25vw;
+  width: 1.7rem;
+  height: 1.8rem;
   display: inline;
 }
 @media only screen and (max-width: 26.6em) {
@@ -750,7 +781,13 @@ select {
 }
 @media only screen and (max-width: 48em) and (max-width: 26.6em) {
   .roadmap-item {
-    margin: 5.55rem auto 6.7rem;
+    margin: 4.55rem auto 5.7rem;
+    width: 47rem;
+  }
+}
+@media only screen and (max-width: 48em) and (max-width: 23.4em) {
+  .roadmap-item {
+    margin: 4.55rem auto 5.7rem;
     height: 30.7rem;
     width: 46rem;
   }
@@ -760,7 +797,17 @@ select {
 }
 @media only screen and (max-width: 26.6em) {
   .roadmap-item__text {
+    width: 27rem;
+  }
+}
+@media only screen and (max-width: 23.4em) {
+  .roadmap-item__text {
     width: 30rem;
+  }
+}
+@media only screen and (max-width: 20) {
+  .roadmap-item__text {
+    width: 26rem;
   }
 }
 .roadmap-item__circle {
@@ -776,16 +823,17 @@ select {
 @media only screen and (max-width: 26.6em) {
   .roadmap-item__circle {
     width: 87%;
+    left: 3%;
   }
 }
 @media only screen and (max-width: 23.4em) {
   .roadmap-item__circle {
-    width: 83%;
+    width: 84%;
   }
 }
 @media only screen and (max-width: 20) {
   .roadmap-item__circle {
-    width: 20%;
+    width: 40%;
   }
 }
 .roadmap-item__h3 {
@@ -809,6 +857,7 @@ select {
 .roadmap-item__first-girl {
   top: 0;
   right: -46%;
+  animation: move-from-left-huge 1s linear;
 }
 @media only screen and (max-width: 48em) {
   .roadmap-item__first-girl {
@@ -863,60 +912,6 @@ select {
   }
 }
 
-.faq {
-  padding: 14.58vw 1.5rem 8.33vw;
-}
-.faq__questions {
-  padding-top: 4.72vw;
-}
-.faq__box {
-  display: flex;
-  padding: 3rem 0 3.7rem;
-  justify-content: space-between;
-  flex-direction: column;
-}
-.faq__body {
-  font-size: 2rem;
-  padding: 2.5rem 0;
-  display: none;
-}
-.faq__body--open {
-  display: flex;
-}
-.faq__header {
-  display: flex;
-  align-items: center;
-}
-.faq__header:hover, .faq__header:active {
-  cursor: pointer;
-}
-.faq__plus-box {
-  position: relative;
-  margin-left: auto;
-  width: 13px;
-  height: 13px;
-}
-.faq__plus-vertical-line {
-  position: absolute;
-  width: 3px;
-  height: 13px;
-  background-color: #222222;
-  left: 5.4px;
-  top: 0;
-}
-.faq__plus-vertical-line--open {
-  transform: rotate(-90deg);
-  transition: all 0.3s;
-}
-.faq__plus-horizontal-line {
-  position: absolute;
-  width: 13px;
-  height: 3px;
-  background-color: #222222;
-  top: 5px;
-  left: 0;
-}
-
 .main {
   text-align: center;
   padding-top: 6.25vw;
@@ -962,6 +957,7 @@ select {
   left: 4vw;
   top: 10vw;
   width: 24vw;
+  animation: move-from-left 0.8s linear;
 }
 @media only screen and (max-width: 26.6em) {
   .main__hero-left {
@@ -989,6 +985,7 @@ select {
   right: 5vw;
   top: 11vw;
   width: 24vw;
+  animation: move-from-right 0.8s linear;
 }
 @media only screen and (max-width: 26.6em) {
   .main__hero-right {
@@ -1009,6 +1006,26 @@ select {
   }
 }
 
+@keyframes move-from-left {
+  from {
+    left: -20px;
+  }
+}
+@keyframes move-from-top {
+  to {
+    transform: scale(1.05);
+  }
+}
+@keyframes move-from-left-huge {
+  from {
+    right: -400px;
+  }
+}
+@keyframes move-from-right {
+  from {
+    right: -20px;
+  }
+}
 .meet-section {
   padding: 0 1.5rem 22.7rem;
 }
@@ -1088,6 +1105,78 @@ select {
 .team-section__position {
   padding: 2.48rem 0 0.6rem;
 }
-.team-section__space {
+.team-section__wrapper {
   padding: 3.33vw 0 4.72vw;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+@media only screen and (max-width: 55em) {
+  .team-section__wrapper {
+    justify-content: space-around;
+  }
+}
+
+.faq {
+  padding: 14.58vw 1.5rem 8.33vw;
+}
+.faq__questions {
+  padding-top: 4.72vw;
+}
+.faq__box {
+  display: flex;
+  padding: 3rem 0 3.7rem;
+  justify-content: space-between;
+  flex-direction: column;
+}
+@media only screen and (max-width: 26.6em) {
+  .faq__question {
+    font-size: 2rem;
+  }
+}
+.faq__body {
+  font-size: 2rem;
+  padding: 2.5rem 0;
+  display: none;
+}
+.faq__body--open {
+  display: flex;
+}
+@media only screen and (max-width: 26.6em) {
+  .faq__body {
+    font-size: 1.8rem;
+  }
+}
+.faq__header {
+  display: flex;
+  align-items: center;
+}
+.faq__header:hover, .faq__header:active {
+  cursor: pointer;
+}
+.faq__plus-box {
+  position: relative;
+  margin-left: auto;
+  width: 13px;
+  height: 13px;
+}
+.faq__plus-vertical-line {
+  position: absolute;
+  width: 3px;
+  height: 13px;
+  background-color: #222222;
+  left: 5.4px;
+  top: 0;
+}
+.faq__plus-vertical-line--open {
+  transform: rotate(-90deg);
+  transition: all 0.3s;
+}
+.faq__plus-horizontal-line {
+  position: absolute;
+  width: 13px;
+  height: 3px;
+  background-color: #222222;
+  top: 5px;
+  left: 0;
 }

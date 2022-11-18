@@ -6,9 +6,16 @@
 
   &__h2 {
     padding-bottom: 2.8rem;
+    @media only screen and (max-width: $bp-mobile) {
+      font-size: 3rem;
+    }
   }
 
   &__list {
+    @media only screen and (max-width: $bp-footer-menu) {
+      display: flex;
+      flex-direction: column;
+    }
   }
   &__list-item {
     display: inline-block;
@@ -40,11 +47,17 @@
     top: -1%;
     left: 7%;
     width: 17.3rem;
+    @media only screen and (max-width: $bp-medium) {
+      display: none;
+    }
   }
 
   &__line {
     position: absolute;
     top: 30%;
     left: 0;
+    @media only screen and (max-width: $bp-mobile) {
+      top: 25%;
+    }
   }
 }
