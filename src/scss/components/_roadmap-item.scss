@@ -126,6 +126,8 @@
 
   &__header {
     display: flex;
+    align-items: center;
+
     &:hover,
     &:active {
       cursor: pointer;
@@ -136,18 +138,16 @@
     margin-left: auto;
     width: 13px;
     height: 13px;
-    align-items: center;
-    display: flex;
   }
   &__plus-vertical-line {
     position: absolute;
     width: 3px;
     height: 13px;
     background-color: $color-main-text;
-    left: 90%;
-    top: 50%;
+    left: 5.4px;
+    top: 0;
     &--open {
-      transform: rotate(270deg);
+      transform: rotate(-90deg);
       transition: all 0.3s;
       //faq__plus-vertical-line--open
     }
@@ -157,7 +157,7 @@
     width: 13px;
     height: 3px;
     background-color: $color-main-text;
-    top: 90%;
-    left: 50%;
+    top: 5px;
+    left: 0;
   }
 }

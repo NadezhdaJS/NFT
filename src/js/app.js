@@ -1,19 +1,16 @@
 import * as flsFunctions from "./modules/functions.js";
 
 flsFunctions.isWebp();
+
 const accordion = document.getElementsByClassName("faq__header");
-const plus = document.getElementsByClassName("faq__plus-vertical-line");
-let i;
 
-for (i = 0; i < accordion.length; i++) {
+for (let i = 0; i < accordion.length; i++) {
   accordion[i].addEventListener("click", function () {
-    this.classList.toggle("faq__body--open");
+    const box = this.closest('.faq__box');
+    const plus = box.querySelector('.faq__plus-vertical-line');
+    const body = box.querySelector('.faq__body');
 
-    let body = this.nextElementSibling;
-    if (body.style.display === "flex") {
-      body.style.display = "none";
-    } else {
-      body.style.display = "flex";
-    }
+    plus.classList.toggle("faq__plus-vertical-line--open");
+    body.classList.toggle("faq__body--open");
   });
 }
