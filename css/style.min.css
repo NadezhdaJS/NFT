@@ -167,6 +167,11 @@ body {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
 }
+@media (min-width: 100em) {
+  .paragraphs {
+    font-size: 1vw;
+  }
+}
 
 .h2 {
   font-size: 6.5rem;
@@ -783,13 +788,21 @@ select {
   .roadmap-item {
     margin: 4.55rem auto 5.7rem;
     width: 47rem;
+    height: 36rem;
   }
 }
 @media only screen and (max-width: 48em) and (max-width: 23.4em) {
   .roadmap-item {
     margin: 4.55rem auto 5.7rem;
     height: 30.7rem;
-    width: 46rem;
+    width: 41rem;
+  }
+}
+@media only screen and (max-width: 48em) and (max-width: 23.4em) {
+  .roadmap-item {
+    margin: 4.55rem auto 5.7rem;
+    height: 23.7rem;
+    width: 36rem;
   }
 }
 .roadmap-item__text {
@@ -802,12 +815,12 @@ select {
 }
 @media only screen and (max-width: 23.4em) {
   .roadmap-item__text {
-    width: 30rem;
+    width: 28rem;
   }
 }
 @media only screen and (max-width: 20) {
   .roadmap-item__text {
-    width: 26rem;
+    width: 18rem;
   }
 }
 .roadmap-item__circle {
