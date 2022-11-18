@@ -34,6 +34,9 @@ body {
   color: $color-paragraphs;
   font-family: $font-second;
   font-weight: 400;
+  @media (min-width: $bp-largest) {
+    font-size: 1vw;
+  }
 }
 
 .h2 {

@@ -11,11 +11,17 @@
     @media only screen and (max-width: $bp-mobile) {
       margin: 4.55rem auto 5.7rem;
       width: 47rem;
+      height: 36rem;
     }
     @media only screen and (max-width: $bp-mobile-small) {
       margin: 4.55rem auto 5.7rem;
       height: 30.7rem;
-      width: 46rem;
+      width: 41rem;
+    }
+    @media only screen and (max-width: $bp-mobile-small) {
+      margin: 4.55rem auto 5.7rem;
+      height: 23.7rem;
+      width: 36rem;
     }
   }
   &__text {
@@ -24,10 +30,10 @@
       width: 27rem;
     }
     @media only screen and (max-width: $bp-mobile-small) {
-      width: 30rem;
+      width: 28rem;
     }
     @media only screen and (max-width: $bp-smallest) {
-      width: 26rem;
+      width: 18rem;
     }
   }
 
